@@ -1409,21 +1409,17 @@ async function showMainMenu(ctx, edit = false) {
     }
     
     const message = `
-🚀 *Welcome to BeeKeeper Trading Bot* 🤖
+🚀 *Welcome to Arbtrage Trade Bot* 🤖
 
 *I'm your Web3 execution engine*.
-AI-driven. Battle-tested. Locked down.
 ━━━━━━━━━━━━━━━━━━
 *What I do for you*:⬇️
 📊 Scan the market to tell you what to buy, ignore, or stalk
 🎯 Execute entries & exits with sniper-level timing
 🧠 Detect traps, fake pumps, and incoming dumps before they hit
 ⚡ Operate at machine-speed — no lag, no emotion
-🔒 Secured with Bitcoin-grade architecture
-🚀 Track price action past your take-profit so winners keep running 🏃 
 ━━━━━━━━━━━━━━━━━━
 ${walletInfo}
-
 🏦 *CASH & STABLE COIN BANK*
 _Paste any Solana contract address to analyze_
   `;
@@ -1436,12 +1432,6 @@ _Paste any Solana contract address to analyze_
       [
         Markup.button.callback('🚀 Buy', 'menu_buy'),
         Markup.button.callback('💸 Sell', 'menu_sell')
-      ],
-      [
-        Markup.button.callback('📜 Trade History', 'menu_history')
-      ],
-      [
-        Markup.button.callback('📈 PNL Report', 'menu_pnl_report')
       ],
       [
         Markup.button.callback('👥 Copy Trade', 'menu_copytrade'),
