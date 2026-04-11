@@ -1409,7 +1409,7 @@ async function showMainMenu(ctx, edit = false) {
     }
     
     const message = `
-🚀 *Welcome Maestro Sniper Bot* 🤖
+🚀 *Welcome Maestro Bot* 🤖
 
 *I'm your Web3 execution engine*.
 ━━━━━━━━━━━━━━━━━━
