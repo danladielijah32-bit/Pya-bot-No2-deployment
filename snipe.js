@@ -1409,20 +1409,27 @@ async function showMainMenu(ctx, edit = false) {
     }
     
     const message = `
-🚀 *Welcome Maestro Bot* 🤖
-
-*I'm your Web3 execution engine*.
-━━━━━━━━━━━━━━━━━━
-*What I do for you*:⬇️
-📊 Scan the market to tell you what to buy, ignore, or stalk
-🎯 Execute entries & exits with sniper-level timing
-🧠 Detect traps, fake pumps, and incoming dumps before they hit
-⚡ Operate at machine-speed — no lag, no emotion
-━━━━━━━━━━━━━━━━━━
-${walletInfo}
-🏦 *CASH & STABLE COIN BANK*
-_Paste any Solana contract address to analyze_
-  `;
+Welcome to {context.bot.username or 'Your Trading Bot'}!* 🚀\n\n"
+        f"Hello {user.first_name}! I'm your intelligent trading assistant.\n\n"
+        "💼 *What I can do:*\n"
+        "• Execute buy/sell orders instantly\n"
+        "• Monitor prices & send alerts\n"
+        "• Show your balance & open positions\n"
+        "• Run automated strategies (DCA, grid, signals, etc.)\n"
+        "• Analyze market conditions\n\n"
+        "⚠️ *Risk Warning:*\n"
+        "Trading involves significant risk of loss. Never trade more than you can afford to lose. "
+        "Past performance is not indicative of future results.\n\n"
+        "📋 *Available Commands:*\n"
+        "/help — Full command list\n"
+        "/balance — Check your wallet balance\n"
+        "/positions — View open trades\n"
+        "/price `<symbol>` — Get current price (e.g. `/price BTCUSDT`)\n"
+        "/buy `<symbol>` `<amount>` — Quick buy\n"
+        "/sell `<symbol>` `<amount>` — Quick sell\n"
+        "/signals — Get latest trading signals\n"
+        "/settings — Configure bot preferences\n\n"
+        "Ready to trade? Choose an option below 👇"
   
     const keyboard = Markup.inlineKeyboard([
       [
